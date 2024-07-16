@@ -1,11 +1,12 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+  let pronombre = ["the", "our"];
+let adjetivo = ["great", "big"];
+let sujeto = ["jogger", "racoon"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+pronombre.forEach(articulo => {
+  adjetivo.forEach(adj => {
+    sujeto.forEach(suj => {
+      console.log(articulo + adj + suj + ".com");
+    });
+  });
+});
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
